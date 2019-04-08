@@ -108,7 +108,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.select {|season, holidays|
     holiday_list << holidays.select {|holiday, supplies| supplies.include?("BBQ")}
   }
-  holiday_list.keys
+  holiday_list.flatten.compact!
 end
 
 
