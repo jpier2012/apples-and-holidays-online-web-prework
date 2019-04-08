@@ -109,7 +109,9 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.include?("BBQ")
     }
   }
+  binding.pry
 end
 
 
 puts all_holidays_with_bbq(holiday_hash)
+
