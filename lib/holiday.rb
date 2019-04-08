@@ -113,7 +113,7 @@ def all_holidays_with_bbq(holiday_hash)
       }
     }
     holiday_list
-      binding.pry
+      #binding.pry
 end
 
 
