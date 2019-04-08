@@ -93,6 +93,13 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize
         }
         print capital.join(" ")
+          supplies.each {|supply|
+            capital = supply.to_s.split(" ")
+            capital.collect! {|word|
+              word.capitalize
+            }
+            print capital.join(", ")
+          }
       }
     }
 
