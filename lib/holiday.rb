@@ -106,7 +106,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_list = []
   holiday_hash.select {|season, holidays|
-    holidays.select {|holiday, supplies|
+    holiday_list << holidays.select {|holiday, supplies|
       supplies.include?("BBQ")
     }
   }
