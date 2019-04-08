@@ -106,10 +106,14 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_list = []
   holiday_hash.select {|season, holidays|
-    holidays.each {|holiday, supplies| supplies.include?("BBQ")}
+    holidays.each {|holiday, supplies|
+      if supplies.include?("BBQ")
+        holiday_list << holiday
+      end
+      }
     }
-    holiday_list.flatten.compact!
-  binding.pry
+    holiday_list
+      binding.pry
 end
 
 
