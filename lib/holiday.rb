@@ -93,9 +93,10 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize
         }
         cap_day = capital.join(" ")
+        binding.pry
       }
     }
-binding.pry
+
 end
 
 all_supplies_in_holidays(holiday_hash)
