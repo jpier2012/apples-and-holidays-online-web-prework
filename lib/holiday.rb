@@ -93,15 +93,7 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize
         }
         cap_day = capital.join(" ")
-        print "  #{cap_day}: "
-          supplies.collect! {|supply|
-            capital = supply.to_s.split(" ")
-            capital.collect! {|word|
-              word.capitalize
-            }
-            capital.join(" ")
-          }
-          puts supplies.join(", ")
+        print "  #{cap_day}: #{supplies}"
       }
     }
 
