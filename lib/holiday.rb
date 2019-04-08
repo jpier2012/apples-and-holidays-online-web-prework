@@ -85,7 +85,17 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-
+  holiday_hash.each {|season, holiday|
+    capital = season.split(" ")
+    capital.collect! {|word|
+      word.capitalize
+    }
+    season = capital.join(" ")
+    puts "#{season.capitalize}:"
+      holiday.each {|day, supplies|
+        print "  #{day}"
+      }
+  }
 end
 
 def all_holidays_with_bbq(holiday_hash)
