@@ -99,7 +99,7 @@ def all_supplies_in_holidays(holiday_hash)
             capital.collect! {|word|
               word.capitalize
             }
-            puts capital.join(" ")
+            prints capital.join(" ")
           }
       }
     }
